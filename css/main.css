@@ -1,0 +1,33 @@
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.root {
+  border: 1px solid #cecece;
+}
+
+.list {
+  border-right: 1px solid #cecece;
+}
+
+.flame-list-item-view.is-selected {
+  font-weight: normal !important;
+  text-shadow: none !important;
+  background: none !important;
+  background-color: #116cd6 !important;
+}
+
+.message-time {
+  color: #aaa;
+}
+
+.message-user {
+  font-weight: bold;
+}
+
+.message-body {
+  background-color: #e5e5ea;
+  padding: 0 15px 0 15px;
+  border-radius: 10px;
+}

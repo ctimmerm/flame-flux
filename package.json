@@ -1,0 +1,23 @@
+{
+  "name": "flame-flux",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "events": "^1.0.2",
+    "flux": "^2.0.3",
+    "moment": "^2.10.3",
+    "object-assign": "^2.0.0"
+  },
+  "devDependencies": {
+    "babelify": "^6.1.2",
+    "gulp": "^3.8.11",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-uglify": "^1.2.0",
+    "jshint": "^2.8.0",
+    "yargs": "^3.9.1"
+  },
+  "scripts": {
+    "start": "gulp && gulp watch"
+  }
+}

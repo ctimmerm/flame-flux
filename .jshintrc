@@ -1,0 +1,12 @@
+{
+    "eqeqeq": true,
+    "indent": 2,
+    "browser": true,
+    "undef": true,
+    "unused": "vars",
+    "latedef": "nofunc",
+    "trailing": true,
+    "nonbsp": true,
+    "esnext": true,
+    "predef": ["Ember", "Flame", "App"]
+}
