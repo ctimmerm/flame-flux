@@ -28,7 +28,7 @@ export default Flame.View.extend({
   willDestroy() {
     this._super();
     MessageStore.removeChangeListener(this._onChange);
-    ThreadStore.addChangeListener(this._onChange);
+    ThreadStore.removeChangeListener(this._onChange);
   },
 
   _onChange() {

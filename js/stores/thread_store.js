@@ -1,4 +1,3 @@
-import assign from 'object-assign';
 import { EventEmitter } from 'events';
 
 import AppDispatcher from '../dispatcher/dispatcher';
@@ -8,7 +7,7 @@ import ActionTypes from '../constants/action_types';
 let _threads = {};
 let _currentID = null;
 
-const ThreadStore = assign(new EventEmitter(), BaseStore, {
+const ThreadStore = Object.assign(new EventEmitter(), BaseStore, {
   getAll() {
     let threads = [];
     for (let id in _threads) {

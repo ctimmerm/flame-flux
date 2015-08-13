@@ -1,4 +1,3 @@
-import assign from 'object-assign';
 import { EventEmitter } from 'events';
 
 import AppDispatcher from '../dispatcher/dispatcher';
@@ -8,7 +7,7 @@ import ActionTypes from '../constants/action_types';
 
 let _messages = [];
 
-const MessageStore = assign(new EventEmitter(), BaseStore, {
+const MessageStore = Object.assign(new EventEmitter(), BaseStore, {
   getMessagesForCurrentThread() {
     let currentThread = ThreadStore.getCurrent();
     if (!currentThread) return [];
